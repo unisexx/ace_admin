@@ -12,48 +12,76 @@
 	<body>
         <?php include_once "_header.php"; ?>
 
-        <div class="container-fluid" id="main-container">
-            <a href="#" id="menu-toggler"><span></span></a><!-- menu toggler -->
-            
-            <?php include_once "_menu.php"?>
-            <div id="main-content" class="clearfix">
+        <div class="main-container" id="main-container">
+            <script type="text/javascript">
+                try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+            </script>
+
+            <div class="main-container-inner">
+                <?php include_once('_menu.php');?>
+                
+                <div class="main-content">
                     <?php echo create_breadcrumb_admin()?>
                     
-                    <div id="page-content" class="clearfix">
-                        <!-- PAGE CONTENT BEGINS HERE -->
-                        <?php echo $template['body']; ?>
-                        <!-- PAGE CONTENT ENDS HERE -->
-                    </div><!--/#page-content-->
-                      
+                    <?php echo $template['body']; ?>
+                    
+                </div><!-- /.main-content -->
+                
+                
+                <div class="ace-settings-container" id="ace-settings-container">
+                    <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+                        <i class="icon-cog bigger-150"></i>
+                    </div>
 
-                    <!-- <div id="ace-settings-container">
-                        <div class="btn btn-app btn-mini btn-warning" id="ace-settings-btn">
-                            <i class="icon-cog"></i>
-                        </div>
-                        <div id="ace-settings-box">
-                            <div>
-                                <div class="pull-left">
-                                    <select id="skin-colorpicker" class="hidden">
-                                        <option data-class="default" value="#438EB9">#438EB9</option>
-                                        <option data-class="skin-1" value="#222A2D">#222A2D</option>
-                                        <option data-class="skin-2" value="#C6487E">#C6487E</option>
-                                        <option data-class="skin-3" value="#D0D0D0">#D0D0D0</option>
-                                    </select>
-                                </div>
-                                <span>&nbsp; Choose Skin</span>
+                    <div class="ace-settings-box" id="ace-settings-box">
+                        <div>
+                            <div class="pull-left">
+                                <select id="skin-colorpicker" class="hide">
+                                    <option data-skin="default" value="#438EB9">#438EB9</option>
+                                    <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                                    <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                                    <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                                </select>
                             </div>
-                            <div><input type="checkbox" class="ace-checkbox-2" id="ace-settings-header" /><label class="lbl" for="ace-settings-header"> Fixed Header</label></div>
-                            <div><input type="checkbox" class="ace-checkbox-2" id="ace-settings-sidebar" /><label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label></div>
+                            <span>&nbsp; Choose Skin</span>
                         </div>
-                    </div> -->
-                    <!--/#ace-settings-container-->
+
+                        <div>
+                            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+                            <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+                            <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+                            <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+                            <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+                            <label class="lbl" for="ace-settings-add-container">
+                                Inside
+                                <b>.container</b>
+                            </label>
+                        </div>
+                    </div>
+                </div><!-- /#ace-settings-container -->
 
 
-            </div><!-- #main-content -->
-        </div><!--/.fluid-container#main-container-->
 
-        <a href="#" id="btn-scroll-up" class="btn btn-small btn-inverse">
-            <i class="icon-double-angle-up icon-only"></i>
-        </a>
+            </div><!-- /.main-container-inner -->
+            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="icon-double-angle-up icon-only bigger-110"></i>
+            </a>
+        </div><!-- /.main-container -->
 	</body>
 </html>

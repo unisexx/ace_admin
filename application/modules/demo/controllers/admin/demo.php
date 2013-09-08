@@ -79,5 +79,9 @@ class Demo extends Admin_Controller
     function blank(){
         $this->template->build('admin/blank');
     }
+    
+    function test(){
+        $this->load->view('admin/test');
+    }
 }
 ?>

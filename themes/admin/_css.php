@@ -1,30 +1,36 @@
 <!-- basic styles -->
 <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="media/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link href="media/font-awesome/css/font-awesome.min.css" rel="stylesheet"  />
 
-<link rel="stylesheet" href="media/font-awesome/css/font-awesome.min.css" />
 <!--[if IE 7]>
   <link rel="stylesheet" href="media/font-awesome/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
-<!--fonts-->
+<!-- page specific plugin styles -->
+
+<!-- fonts -->
+
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
 
-<!-- page specific plugin styles -->
-<link rel="stylesheet" href="themes/admin/media/css/jquery-ui-1.10.2.custom.min.css" />
-<link rel="stylesheet" href="themes/admin/media/css/chosen.css" />
-<link rel="stylesheet" href="themes/admin/media/css/datepicker.css" />
-<link rel="stylesheet" href="themes/admin/media/css/bootstrap-timepicker.css" />
-<link rel="stylesheet" href="themes/admin/media/css/daterangepicker.css" />
-<link rel="stylesheet" href="themes/admin/media/css/colorpicker.css" />
-<link rel="stylesheet" href="themes/admin/media/css/fullcalendar.css" />
-<link rel="stylesheet" href="themes/admin/media/css/colorbox.css" />
-<link rel="stylesheet" href="themes/admin/media/css/jquery.gritter.css">
-
 <!-- ace styles -->
+
 <link rel="stylesheet" href="themes/admin/media/css/ace.min.css" />
-<link rel="stylesheet" href="themes/admin/media/css/ace-responsive.min.css" />
+<link rel="stylesheet" href="themes/admin/media/css/ace-rtl.min.css" />
 <link rel="stylesheet" href="themes/admin/media/css/ace-skins.min.css" />
-<!--[if lt IE 9]>
+
+<!--[if lte IE 8]>
   <link rel="stylesheet" href="themes/admin/media/css/ace-ie.min.css" />
+<![endif]-->
+
+<!-- inline styles related to this page -->
+
+<!-- ace settings handler -->
+
+<script src="themes/admin/media/js/ace-extra.min.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+<script src="themes/admin/media/js/html5shiv.js"></script>
+<script src="themes/admin/media/js/respond.min.js"></script>
 <![endif]-->

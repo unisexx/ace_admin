@@ -70,7 +70,16 @@ function create_breadcrumb_admin(){
   $ci = &get_instance();
   $i=3;
   $uri = $ci->uri->segment($i);
-  $link = '<div id="breadcrumbs"><ul class="breadcrumb"><li><i class="icon-home"></i> <a href="admin/">Home</a><span class="divider"><i class="icon-angle-right"></i></span></li>';
+  $link = '<div class="breadcrumbs" id="breadcrumbs">
+                        <script type="text/javascript">
+                            try{ace.settings.check("breadcrumbs" , "fixed")}catch(e){}
+                        </script>
+
+                        <ul class="breadcrumb">
+                            <li>
+                                <i class="icon-home home-icon"></i>
+                                <a href="#">Home</a>
+                            </li>';
  
   while($uri != ''){
     $prep_link = '';
@@ -83,20 +92,23 @@ function create_breadcrumb_admin(){
     $link.=$ci->uri->segment($i).'</li>';
   }else{
     $link.='<li><a href="'.site_url($prep_link).'">';
-    $link.=$ci->uri->segment($i).'</a> <span class="divider"><i class="icon-angle-right"></i></span></li>';
+    $link.=$ci->uri->segment($i).'</a></li>';
   }
  
   $i++;
   $uri = $ci->uri->segment($i);
   }
-    $link .= '</ul><div id="nav-search">
-                            <!--<form class="form-search">
-                                    <span class="input-icon">
-                                        <input autocomplete="off" id="nav-search-input" type="text" class="input-small search-query" placeholder="Search ..." />
-                                        <i id="nav-search-icon" class="icon-search"></i>
-                                    </span>
-                            </form>-->
-                        </div></div>';
+    $link .= '</ul><!-- .breadcrumb -->
+
+                        <div class="nav-search" id="nav-search">
+                            <form class="form-search">
+                                <span class="input-icon">
+                                    <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                                    <i class="icon-search nav-search-icon"></i>
+                                </span>
+                            </form>
+                        </div><!-- #nav-search -->
+                    </div>';
     return $link;
   }
 }
