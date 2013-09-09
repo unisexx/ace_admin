@@ -25,8 +25,20 @@ class Demo extends Admin_Controller
         $this->template->build('admin/treeview');
     }
     
+    function jqueryui(){
+        $this->template->build('admin/jquery-ui');
+    }
+    
+    function nestablelist(){
+        $this->template->build('admin/nestable-list');
+    }
+    
     function tables(){
         $this->template->build('admin/tables');
+    }
+    
+    function jqgrid(){
+        $this->template->build('admin/jqgrid');
     }
     
     function form_elements(){
@@ -39,6 +51,10 @@ class Demo extends Admin_Controller
     
     function wysiwyg(){
         $this->template->build('admin/wysiwyg');
+    }
+    
+    function dropzone(){
+        $this->template->build('admin/dropzone');
     }
     
     function widgets(){

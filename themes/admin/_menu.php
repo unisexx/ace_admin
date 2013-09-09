@@ -52,7 +52,11 @@
             </a>
         </li>
 
-        <li <?php echo menu_active('demo',false,'elements','active open')?>>
+        <li <?php echo menu_active('demo',false,'elements','active open')?>
+            <?php echo menu_active('demo',false,'buttons','active open')?>
+            <?php echo menu_active('demo',false,'treeview','active open')?>
+            <?php echo menu_active('demo',false,'jqueryui','active open')?>
+            <?php echo menu_active('demo',false,'nestablelist','active open')?>>
             <a href="#" class="dropdown-toggle">
                 <i class="icon-desktop"></i>
                 <span class="menu-text"> UI Elements </span>
@@ -68,29 +72,29 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="buttons.html">
+                <li <?php echo menu_active('demo',false,'buttons')?>>
+                    <a href="demo/admin/demo/buttons">
                         <i class="icon-double-angle-right"></i>
                         Buttons &amp; Icons
                     </a>
                 </li>
 
-                <li>
-                    <a href="treeview.html">
+                <li <?php echo menu_active('demo',false,'treeview')?>>
+                    <a href="demo/admin/demo/treeview">
                         <i class="icon-double-angle-right"></i>
                         Treeview
                     </a>
                 </li>
 
-                <li>
-                    <a href="jquery-ui.html">
+                <li <?php echo menu_active('demo',false,'jqueryui')?>>
+                    <a href="demo/admin/demo/jqueryui">
                         <i class="icon-double-angle-right"></i>
                         jQuery UI
                     </a>
                 </li>
 
-                <li>
-                    <a href="nestable-list.html">
+                <li <?php echo menu_active('demo',false,'nestablelist')?>>
+                    <a href="demo/admin/demo/nestablelist">
                         <i class="icon-double-angle-right"></i>
                         Nestable Lists
                     </a>
@@ -141,7 +145,8 @@
             </ul>
         </li>
 
-        <li>
+        <li <?php echo menu_active('demo',false,'tables','active open')?>
+            <?php echo menu_active('demo',false,'jqgrid','active open')?>>
             <a href="#" class="dropdown-toggle">
                 <i class="icon-list"></i>
                 <span class="menu-text"> Tables </span>
@@ -150,15 +155,15 @@
             </a>
 
             <ul class="submenu">
-                <li>
-                    <a href="tables.html">
+                <li <?php echo menu_active('demo',false,'tables')?>>
+                    <a href="demo/admin/demo/tables">
                         <i class="icon-double-angle-right"></i>
                         Simple &amp; Dynamic
                     </a>
                 </li>
 
-                <li>
-                    <a href="jqgrid.html">
+                <li <?php echo menu_active('demo',false,'jqgrid')?>>
+                    <a href="demo/admin/demo/jqgrid">
                         <i class="icon-double-angle-right"></i>
                         jqGrid plugin
                     </a>
@@ -166,7 +171,10 @@
             </ul>
         </li>
 
-        <li>
+        <li <?php echo menu_active('demo',false,'form_elements','active open')?>
+            <?php echo menu_active('demo',false,'form_wizard','active open')?>
+            <?php echo menu_active('demo',false,'wysiwyg','active open')?>
+            <?php echo menu_active('demo',false,'dropzone','active open')?>>
             <a href="#" class="dropdown-toggle">
                 <i class="icon-edit"></i>
                 <span class="menu-text"> Forms </span>
@@ -175,29 +183,29 @@
             </a>
 
             <ul class="submenu">
-                <li>
-                    <a href="form-elements.html">
+                <li <?php echo menu_active('demo',false,'form_elements')?>>
+                    <a href="demo/admin/demo/form_elements">
                         <i class="icon-double-angle-right"></i>
                         Form Elements
                     </a>
                 </li>
 
-                <li>
-                    <a href="form-wizard.html">
+                <li <?php echo menu_active('demo',false,'form_wizard')?>>
+                    <a href="demo/admin/demo/form_wizard">
                         <i class="icon-double-angle-right"></i>
                         Wizard &amp; Validation
                     </a>
                 </li>
 
-                <li>
-                    <a href="wysiwyg.html">
+                <li <?php echo menu_active('demo',false,'wysiwyg')?>>
+                    <a href="demo/admin/demo/wysiwyg">
                         <i class="icon-double-angle-right"></i>
                         Wysiwyg &amp; Markdown
                     </a>
                 </li>
 
-                <li>
-                    <a href="dropzone.html">
+                <li <?php echo menu_active('demo',false,'dropzone')?>>
+                    <a href="demo/admin/demo/dropzone">
                         <i class="icon-double-angle-right"></i>
                         Dropzone File Upload
                     </a>
@@ -205,8 +213,8 @@
             </ul>
         </li>
 
-        <li>
-            <a href="widgets.html">
+        <li <?php echo menu_active('demo',false,'widgets')?>>
+            <a href="demo/admin/demo/widgets">
                 <i class="icon-list-alt"></i>
                 <span class="menu-text"> Widgets </span>
             </a>
